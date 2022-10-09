@@ -62,7 +62,7 @@ def predict(carat, cut, color, clarity, depth, table, x, y, z):
 
 
 st.title('Customer Transaction Predictor')
-st.image("""https://www.google.com/search?q=bank&rlz=1C1GCEA_enIN1023IN1023&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiKwMWW6NP6AhVlumMGHZRnB1EQ_AUoA3oECAIQBQ&biw=1280&bih=609&dpr=1.5#imgrc=jjipXDrs5E34xM""")
+st.image("""https://www.india.com/wp-content/uploads/2014/08/666.jpg""")
 st.header('Enter the characteristics of the diamond:')
 carat = st.number_input('Carat Weight:', min_value=0.1, max_value=10.0, value=1.0)
 cut = st.selectbox('Cut Rating:', ['Fair', 'Good', 'Very Good', 'Premium', 'Ideal'])
