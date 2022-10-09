@@ -138,7 +138,7 @@ var_24 = st.number_input('var_24:',min_value=0.1, max_value=100.0, value=1.0)
 
 
 
-if st.button('Predict Price'):
+if st.button('Predict Customer Transaction'):
     target = predict(var_0,
 var_1,
 var_2,
@@ -164,4 +164,4 @@ var_21,
 var_22,
 var_23,
 var_24)
-    st.success(f'The predicted price of the diamond is ${target[0]:.2f} USD')
+    st.success(f'The Customer will make Transaction is {target}')
