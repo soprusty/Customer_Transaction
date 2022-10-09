@@ -1,6 +1,7 @@
 import sklearn.neighbors as knn
 import streamlit as st
 import pandas as pd
+import pickle
 
 #Loading up the Regression model we created
 model = knn.KNeighborsClassifier()
