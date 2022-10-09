@@ -164,4 +164,4 @@ var_21,
 var_22,
 var_23,
 var_24)
-    st.success(f'The Customer will make Transaction is {target}')
+    st.success(f'The Prediction is {target}, 0 is No Transaction, 1 is Transaction')
