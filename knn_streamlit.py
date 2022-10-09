@@ -1,4 +1,4 @@
-import KNeighborsClassifier as knn
+import sklearn.neighbors as knn
 import streamlit as st
 import pandas as pd
 
@@ -414,8 +414,7 @@ var_195	,
 var_196	,
 var_197	,
 var_198	,
-var_199	,
-]], columns=['var_0',
+var_199]], columns=['var_0',
 'var_1',
 'var_2',
 'var_3',
