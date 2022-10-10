@@ -163,3 +163,8 @@ var_22,
 var_23,
 var_24)
     st.success(f'The Prediction value is {target}, \n 0: Customer will Not make Transaction in the Bank, 1: Customer will make Transaction in the Bank')
+    
+    st.markdown("hello")
+    st.code("a=123")
+    st.caption("captopn")
+    st.text("text")
