@@ -164,7 +164,6 @@ var_23,
 var_24)
     st.success(f'The Prediction value is {target}')
     
-    st.markdown("0: Customer will Not make Transaction in the Bank, 1: Customer will make Transaction in the Bank")
-    st.code("0: Customer will Not make Transaction in the Bank, 1: Customer will make Transaction in the Bank")
-    st.caption("0: Customer will Not make Transaction in the Bank, 1: Customer will make Transaction in the Bank")
-    st.text("0: Customer will Not make Transaction in the Bank, 1: Customer will make Transaction in the Bank")
+    
+    st.text("0: Customer will Not make any Transaction in the Bank", 
+            "1: Customer will make Transaction in the Bank")
