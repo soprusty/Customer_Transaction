@@ -162,7 +162,7 @@ var_21,
 var_22,
 var_23,
 var_24)
-    st.success(f'The Prediction value is {target}')
+    st.success(f'The Prediction value for this customer is: {target}')
     
     st.text("Reference")
     st.text("0: Customer will Not make any Transaction in the Bank") 
