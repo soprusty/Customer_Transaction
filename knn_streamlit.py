@@ -162,6 +162,6 @@ var_21,
 var_22,
 var_23,
 var_24)
-    st.success(f'The Prediction value is target, 
+    st.success(f'The Prediction value is (target), 
                0: No Transaction, 
                1: Transaction')
