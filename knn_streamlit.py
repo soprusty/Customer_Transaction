@@ -7,7 +7,7 @@ import pickle
 model = knn.KNeighborsClassifier()
 #model.load_model('finalized_model.sav')
 
-loaded_model = pickle.load(open('finalized_model_new.sav', 'rb'))
+loaded_model = pickle.load(open('finalized_model_LR.sav', 'rb'))
 
 #Caching the model for faster loading
 @st.cache
