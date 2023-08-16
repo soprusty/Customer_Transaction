@@ -14,84 +14,9 @@ loaded_model = pickle.load(open('finalized_model_new.sav', 'rb'))
 
 
 # Define the prediction function
-def predict(var_0,
-var_1	,
-var_2	,
-var_3	,
-var_4	,
-var_5	,
-var_6	,
-var_7	,
-var_8	,
-var_9	,
-var_10	,
-var_11	,
-var_12	,
-var_13	,
-var_14	,
-var_15	,
-var_16	,
-var_17	,
-var_18	,
-var_19	,
-var_20	,
-var_21	,
-var_22	,
-var_23	,
-var_24):
-    
-    
-    
-
-    prediction = loaded_model.predict(pd.DataFrame([[var_0	,
-var_1	,
-var_2	,
-var_3	,
-var_4	,
-var_5	,
-var_6	,
-var_7	,
-var_8	,
-var_9	,
-var_10	,
-var_11	,
-var_12	,
-var_13	,
-var_14	,
-var_15	,
-var_16	,
-var_17	,
-var_18	,
-var_19	,
-var_20	,
-var_21	,
-var_22	,
-var_23	,
-var_24]], columns=['var_0',
-'var_1',
-'var_2',
-'var_3',
-'var_4',
-'var_5',
-'var_6',
-'var_7',
-'var_8',
-'var_9',
-'var_10',
-'var_11',
-'var_12',
-'var_13',
-'var_14',
-'var_15',
-'var_16',
-'var_17',
-'var_18',
-'var_19',
-'var_20',
-'var_21',
-'var_22',
-'var_23',
-'var_24']))
+def predict(var_0,var_1,var_2,var_3,var_4,var_5,var_6,var_7,var_8,var_9,var_10,var_11,var_12,var_13,var_14,var_15,var_16,var_17,var_18,var_19,var_20,var_21,var_22,var_23,var_24):
+    prediction = loaded_model.predict(pd.DataFrame([[var_0,var_1,var_2,var_3,var_4,var_5,var_6,var_7,var_8,var_9,var_10,var_11,var_12,var_13,var_14,var_15,var_16,var_17,var_18,var_19,var_20,var_21,var_22,var_23,var_24]], 
+                                                   columns=['var_0','var_1','var_2','var_3','var_4','var_5','var_6','var_7','var_8','var_9','var_10','var_11','var_12','var_13','var_14','var_15','var_16','var_17','var_18','var_19','var_20','var_21','var_22','var_23','var_24']))
     return prediction
 
 
@@ -137,32 +62,7 @@ var_24 = st.number_input('var_24:',min_value=-100.0, max_value=100.0, value=1.0)
 
 
 if st.button('Predict Customer Transaction'):
-    target = predict(
-var_0,
-var_1,
-var_2,
-var_3,
-var_4,
-var_5,
-var_6,
-var_7,
-var_8,
-var_9,
-var_10,
-var_11,
-var_12,
-var_13,
-var_14,
-var_15,
-var_16,
-var_17,
-var_18,
-var_19,
-var_20,
-var_21,
-var_22,
-var_23,
-var_24)
+    target = predict(var_0,var_1,var_2,var_3,var_4,var_5,var_6,var_7,var_8,var_9,var_10,var_11,var_12,var_13,var_14,var_15,var_16,var_17,var_18,var_19,var_20,var_21,var_22,var_23,var_24)
     st.success(f'The Prediction value for this customer is: {target}')
     
     st.text("Reference")
